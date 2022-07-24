@@ -66,13 +66,13 @@ i.e. for world one, 2nd photoset, it would be
 `001_b_bug`
 
 ### maze:
-maze(001-999)_photo(a-z)_maze_inversion(inv or norm)_robotpos(rowcolumn)_robotheading(N S E or W)_realtargetpos(rowcolumn)_faketargetpos(rowcolumn)
+maze(001-999)_photo(a-z)_maze_inversion('inv' or 'nor')_robotpos(rowcolumn)_robotheading(N S E or W)_realtargetpos(rowcolumn)_faketargetpos(rowcolumn)
 
 i.e. for world one, 2nd photoset, which has the maze inverted, it would be
 
 `001_b_maze_inv_00_S_24_16`
 
-(not sure if we need all this info, but it might be useful for say giving an output like "you said it was north, but it's actually south")
+(not sure if we need all this info, but it might be useful for say giving an output like "you said it was north, but it's actually south". Also, the 'inv' or 'nor' need to be 3 characters each so I can continue to hack at the substrings)
 
 ### robot:
 world(001-999)_photoset(a-z)_robot
