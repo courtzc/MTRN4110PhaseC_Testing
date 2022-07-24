@@ -29,17 +29,21 @@ Please make each set of photos of the world (bug, maze, robot) have this syntax:
 #### bug:
 world(001-999)_photoset(a-z)_bug
 i.e. for world one, 2nd photoset, it would be
+
 `001_b_bug`
 
 #### maze:
 maze(001-999)_photo(a-z)_maze_inversion(inv or norm)_robotpos(rowcolumn)_robotheading(N S E or W)_realtargetpos(rowcolumn)_faketargetpos(rowcolumn)
 i.e. for world one, 2nd photoset, which has the maze inverted, it would be
+
 `001_b_maze_inv_00_S_24_16`
+
 (not sure if we need all this info, but it might be useful for say giving an output like "you said it was north, but it's actually south")
 
 #### robot:
 world(001-999)_photoset(a-z)_robot
 i.e. for world one, 2nd photoset, it would be
+
 `001_b_robot`
 
 
