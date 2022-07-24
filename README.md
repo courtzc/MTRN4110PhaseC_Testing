@@ -2,7 +2,7 @@
 Testing and test photos for MTRN4110 Phase C
 
 
-# Adding to your project
+# Adding the contents of this test repo to your project
 
 To update your current project git repo with these latest files, add this repo as an upstream friend. In your terminal in your project's root directory, run:
 
