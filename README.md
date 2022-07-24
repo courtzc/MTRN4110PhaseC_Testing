@@ -48,7 +48,7 @@ Let's put the number of the world (001 - 999) somewhere in the world name so we 
 
 Put these bad boys in the tests/ directory.
 
-### correct output file:
+### Output text file (the known map):
 
 Just `001.txt` is great (ensures it's first in the list of files returned by the 001 search)
 
