@@ -60,6 +60,7 @@ Please make each set of photos of the world (bug, maze, robot) have this syntax:
 
 ### bug:
 world(001-999)_photoset(a-z)_bug
+
 i.e. for world one, 2nd photoset, it would be
 
 `001_b_bug`
