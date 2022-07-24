@@ -34,6 +34,7 @@ i.e. for world one, 2nd photoset, it would be
 
 #### maze:
 maze(001-999)_photo(a-z)_maze_inversion(inv or norm)_robotpos(rowcolumn)_robotheading(N S E or W)_realtargetpos(rowcolumn)_faketargetpos(rowcolumn)
+
 i.e. for world one, 2nd photoset, which has the maze inverted, it would be
 
 `001_b_maze_inv_00_S_24_16`
@@ -42,6 +43,7 @@ i.e. for world one, 2nd photoset, which has the maze inverted, it would be
 
 #### robot:
 world(001-999)_photoset(a-z)_robot
+
 i.e. for world one, 2nd photoset, it would be
 
 `001_b_robot`
