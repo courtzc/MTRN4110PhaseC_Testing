@@ -39,7 +39,7 @@ It's just your normal clone procedure to have this repo on your computer and con
 # Syntax for contributing to the test repo
 
 ## World
-Please put them in the worlds/ folder.
+These go in the worlds/ folder.
 
 Let's put the number of the world (001 - 999) somewhere in the world name so we can keep track and make more photos later if we need to. 
 
@@ -54,9 +54,9 @@ Just `001.txt` is great (ensures it's first in the list of files returned by the
 
 ## Photo sets
 
-Please put these in the root directory.
+These also go in the tests/ directory.
 
-Please make each set of photos of the world (bug, maze, robot) have this syntax:
+Each set of photos of the world (bug, maze, robot) have this syntax:
 
 ### bug:
 world(001-999)_photoset(a-z)_bug
