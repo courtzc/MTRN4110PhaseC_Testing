@@ -10,7 +10,7 @@ To update your current project git repo with these latest files, add this repo a
 
 Then, to pull latest changes from that upstream into your project, go to your **project's** root directory and run:
 
-`git pull upstream`
+`git pull upstream main --allow-unrelated-histories`
 
 # Adding to the test repo
 
