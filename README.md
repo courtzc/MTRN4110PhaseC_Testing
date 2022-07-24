@@ -31,8 +31,6 @@ def my_project(maze_pic, bug_pic, robot_pic):
   
   
   return <output text in the form of 37x11 array of chars>
-  
-  
 ```
 
 *note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
