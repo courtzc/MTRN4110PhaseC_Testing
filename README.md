@@ -21,13 +21,20 @@ It's just your normal clone procedure to have this repo on your computer and con
 # Using the autotester
 
 I will update this once I have an MVP. Likely you will just need to copy your code into a .py file that has the following syntax
-`
+
+
+```
 def my_project(maze_pic, bug_pic, robot_pic):
+
 
   < all your code >
   
+  
   return <output text in the form of 37x11 array of chars>
-`
+  
+  
+```
+
 *note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
 
 # Syntax
