@@ -12,11 +12,6 @@ Then, to pull latest changes from that upstream into your project, go to your **
 
 `git pull upstream main --allow-unrelated-histories`
 
-# Adding to the test repo
-
-All changes to the test things (pictures, the autotester, expected output maps) **should be committed and pushed to this test repo** (not your project repo, even though it will have the files). This is because the testing repo isn't watching your project, and won't update automatically.
-
-It's just your normal clone procedure to have this repo on your computer and contribute directly to it.
 
 # Using the autotester
 
@@ -35,7 +30,13 @@ def my_project(maze_pic, bug_pic, robot_pic):
 
 *note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
 
-# Syntax
+# Adding to the test repo
+
+All changes to the test things (pictures, the autotester, expected output maps) **should be committed and pushed to this test repo** (not your project repo, even though it will have the files). This is because the testing repo isn't watching your project, and won't update automatically.
+
+It's just your normal clone procedure to have this repo on your computer and contribute directly to it.
+
+# Syntax for contributing to the test repo
 
 ## World
 Please put them in the worlds/ folder.
