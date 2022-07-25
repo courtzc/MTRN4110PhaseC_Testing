@@ -2,7 +2,8 @@
 Testing and test photos for MTRN4110 Phase C
 
 
-# Adding the contents of this test repo to your project
+# Using the autotester
+## Adding the contents of this test repo to your project
 
 To update your current project git repo with these latest files, add this repo as an upstream friend. In your terminal in your project's root directory, run:
 
@@ -13,8 +14,7 @@ Then, to pull latest changes from that upstream into your project, go to your **
 `git pull upstream main --allow-unrelated-histories`
 
 
-# Using the autotester
-
+## Running the autotester
 Export your ipynb notebook into a python script (it's an option in vscode command palette). Copy the content into the file `project_function_code.py`, which looks like this:
 
 
@@ -47,25 +47,33 @@ Comment out most of your print statements if you're doing lots of tests at once,
 
 Comment out your `plt.show()` statements if you're doing lots - they pause the execution until you close them
 
-# Adding to the test repo
+# Contributing to the test repo (i.e. uploading worlds and photosets)
 
 All changes to the test things (pictures, the autotester, expected output maps) **should be committed and pushed to this test repo** (not your project repo, even though it will have the files). This is because the testing repo isn't watching your project, and won't update automatically.
 
 It's just your normal clone procedure to have this repo on your computer and contribute directly to it.
 
-# Syntax for contributing to the test repo
+## Requirements for photos
+I've added a file `region_overlay.pptx` which has a set of lines on it. If you take the maze fixed size screenshot and copy it into the powerpoint and "send to back", you can quickly make sure it's a valid shot (i.e. cornerstones are in regions, pink cornerstone is in either top left or bottom right region).
 
-## World
+## Syntax for filenames
+
+### World
 These go in the worlds/ folder.
 
-Let's put the number of the world (001 - 999) somewhere in the world name so we can keep track and make more photos later if we need to. 
+Put the number of the world (001 - 999) somewhere in the world name so we can keep track and make more photos later if we need to. 
 
+i.e. for world one, it would be
 
-## Outputs
+`z1234567_MTRN4110_PhaseC_001.wbt`
+
+*note: not sure if we need to put the .wbproj file in for every world?*
+
+### Outputs
 
 Put these bad boys in the tests/ directory.
 
-### Output text file (the known map):
+#### Output text file (the known map):
 
 world(001-999).txt
 
@@ -75,20 +83,20 @@ i.e. for world one, it would be
 
 (this ensures it's first in the list of files returned by the 001 search)
 
-## Photo sets
+### Photo sets
 
 These also go in the tests/ directory.
 
 Each set of photos of the world (bug, maze, robot) have this syntax:
 
-### bug:
+#### bug:
 world(001-999)_photoset(a-z)_bug
 
 i.e. for world one, 2nd photoset, it would be
 
 `001_b_bug`
 
-### maze:
+#### maze:
 maze(001-999)_photo(a-z)_maze_inversion('inv' or 'nor')_robotpos(rowcolumn)_robotheading(N S E or W)_realtargetpos(rowcolumn)_faketargetpos(rowcolumn)
 
 i.e. for world one, 2nd photoset, which has the maze inverted, it would be
@@ -97,7 +105,7 @@ i.e. for world one, 2nd photoset, which has the maze inverted, it would be
 
 (not sure if we need all this info, but it might be useful for say giving an output like "you said it was north, but it's actually south". Also, the 'inv' or 'nor' need to be 3 characters each so I can continue to hack at the substrings)
 
-### robot:
+#### robot:
 world(001-999)_photoset(a-z)_robot
 
 i.e. for world one, 2nd photoset, it would be
