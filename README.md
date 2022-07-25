@@ -54,7 +54,7 @@ All changes to the test things (pictures, the autotester, expected output maps) 
 It's just your normal clone procedure to have this repo on your computer and contribute directly to it.
 
 ## Requirements for photos
-I've added a file `region_overlay.pptx` which has a set of lines on it. If you take the maze fixed size screenshot and copy it into the powerpoint and "send to back", you can quickly make sure it's a valid shot (i.e. cornerstones are in regions, pink cornerstone is in either top left or bottom right region).
+I've added a file `region_overlay.pptx` which has a set of lines on it that line up with the spec "ABCD" regions. If you take the maze fixed size screenshot and copy it into the powerpoint and "send to back", you can quickly make sure it's a valid shot (i.e. cornerstones are in regions, pink cornerstone is in either top left or bottom right region).
 
 ## Syntax for filenames
 
