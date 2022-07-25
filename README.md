@@ -38,6 +38,10 @@ Change your paths for the three pictures to be the three input variables, i.e.:
 
 *note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
 
+Go to your anaconda prompt and navigate to the root directory of **your project git repo**. Then type:
+
+`python autotester.py`
+
 ## Keeping it valid
 The project_function_code.py function should return a str which is the maze. I did it like this (for each row that I put together)
 
