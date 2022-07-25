@@ -15,6 +15,11 @@ Then, to pull latest changes from that upstream into your project, go to your **
 
 
 ## Running the autotester
+
+### Change autotester.py
+Change the `path` variable to be the your project's root directory.
+
+### Change project_function_code.py
 Export your ipynb notebook into a python script (it's an option in vscode command palette). Copy the content into the file `project_function_code.py`, which looks like this:
 
 
@@ -38,9 +43,12 @@ Change your paths for the three pictures to be the three input variables, i.e.:
 
 *note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
 
+### Go to anaconda prompt
 Go to your anaconda prompt and navigate to the root directory of **your project git repo**. Then type:
 
 `python autotester.py`
+
+Done!
 
 ## Keeping it valid
 The project_function_code.py function should return a str which is the maze. I did it like this (for each row that I put together)
