@@ -15,9 +15,7 @@ Then, to pull latest changes from that upstream into your project, go to your **
 
 # Using the autotester
 
-Export your ipynb notebook into a python script (it's an option in vscode command palette). Copy the content into the file:
-
-`project_function_code.py`, which looks like this
+Export your ipynb notebook into a python script (it's an option in vscode command palette). Copy the content into the file `project_function_code.py`, which looks like this:
 
 
 ```
@@ -29,6 +27,8 @@ def my_project(maze_pic, bug_pic, robot_pic):
   
   return <output text in the form of 37x11 array of chars>
 ```
+
+Change your paths for the three pictures to be the three input variables.
 
 *note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
 
