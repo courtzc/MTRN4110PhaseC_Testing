@@ -15,7 +15,9 @@ Then, to pull latest changes from that upstream into your project, go to your **
 
 # Using the autotester
 
-I will update this once I have an MVP. Likely you will just need to copy your code into a .py file that has the following syntax
+Export your ipynb notebook into a python script (it's an option in vscode command palette). Copy the content into the file:
+
+`project_function_code.py`, which looks like this
 
 
 ```
@@ -29,6 +31,20 @@ def my_project(maze_pic, bug_pic, robot_pic):
 ```
 
 *note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
+
+## Keeping it valid
+The project_function_code.py function should return a str which is the maze. I did it like this (for each row that I put together)
+
+```
+actual_output = ""
+# for each row (obvs str('') content will vary)
+  actual_output += str(' --- --- --- --- --- --- --- --- --- \n')
+return actual_output
+```
+
+## Recommendations
+Comment out most of your print statements if you're doing lots of tests at once, it gets messy
+Comment out your `plt.show()` statements if you're doing lots - they pause the execution until you close them
 
 # Adding to the test repo
 
