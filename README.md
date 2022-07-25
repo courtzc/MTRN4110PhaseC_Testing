@@ -67,7 +67,13 @@ Put these bad boys in the tests/ directory.
 
 ### Output text file (the known map):
 
-Just `001.txt` is great (ensures it's first in the list of files returned by the 001 search)
+world(001-999).txt
+
+i.e. for world one, it would be
+
+`001.txt`
+
+(this ensures it's first in the list of files returned by the 001 search)
 
 ## Photo sets
 
