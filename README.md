@@ -44,6 +44,7 @@ return actual_output
 
 ## Recommendations
 Comment out most of your print statements if you're doing lots of tests at once, it gets messy
+
 Comment out your `plt.show()` statements if you're doing lots - they pause the execution until you close them
 
 # Adding to the test repo
