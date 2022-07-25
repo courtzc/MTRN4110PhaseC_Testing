@@ -13,7 +13,7 @@ Then, to pull latest changes from that upstream into your project, go to your **
 
 `git pull upstream main --allow-unrelated-histories`
 
-After the first time, you won't need the `--allow-unrelated-histories` tag. Best practice is to pull the upstream every time you go to start testing. Use the command
+After the first time, you won't need the `--allow-unrelated-histories` tag. Best practice is to pull the upstream every time you go to start testing. Use the command:
 
 `git pull upstream main`
 
