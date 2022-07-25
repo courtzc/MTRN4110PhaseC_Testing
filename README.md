@@ -28,7 +28,13 @@ def my_project(maze_pic, bug_pic, robot_pic):
   return <output text in the form of 37x11 array of chars>
 ```
 
-Change your paths for the three pictures to be the three input variables.
+Change your paths for the three pictures to be the three input variables, i.e.:
+
+```
+  MAZE_FILE_NAME = maze_pic
+  ROBOT_FILE_NAME = robot_pic
+  IMAGE_LADYBUG_FILE_NAME = bug_pic
+```
 
 *note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
 
