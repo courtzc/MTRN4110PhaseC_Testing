@@ -21,7 +21,9 @@ After the first time, you won't need the `--allow-unrelated-histories` tag. Best
 ## Running the autotester
 
 ### Change autotester.py
-Change the `path` variable to be the your project's root directory.
+Change the `path` variable to be the your project's tests directory. i.e. mine is:
+
+`path = 'C:\\Users\\Court\\source\\repos\MTRN4110PhaseC\\tests`
 
 ### Change project_function_code.py
 Export your ipynb notebook into a python script (it's an option in vscode command palette). Copy the content into the file `project_function_code.py`, which looks like this:
