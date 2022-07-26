@@ -13,7 +13,7 @@ from project_function_code import project_function
 ### CHANGE THESE INPUTS ###
 
 # what is the path to your tests folder?
-path = 'C:\\Users\\leap.staff\\Desktop\\Other\\Term 2 2022\\4110_ROBOTIC_DESIGN\\z1234567_MTRN4110_PhaseC\\tests'
+path = "D:\\OneDrive\\Documents\\AAUNSW\\2022 T2\\MTRN4110\\MTRN4110PhaseC\\tests"
 
 # how many worlds are you testing?
 x = 2
@@ -54,14 +54,14 @@ for j in range(1,t):
     while k < len(files):
      
         # take the three files
-        bugfile =  ["tests/", files[k]]
-        mazefile =  ["tests/", files[k+1]]
-        robotfile =  ["tests/", files[k+2]]
+        bugfile =  ["tests/Ladybug_small.png"]
+        mazefile =  ["tests/", files[k]]
+        robotfile =  ["tests/", files[k+1]]
         bug_photo = ''.join(bugfile)
         maze_photo = ''.join(mazefile)
         robot_photo = ''.join(robotfile)
         
-        set_letter = bug_photo[9:12]
+        set_letter = maze_photo[9:12]
         print("-----------------------")
         print("Beginning test set", set_letter)
         
@@ -88,7 +88,7 @@ for j in range(1,t):
         print("End of set", set_letter, "tests.")
         print("---------------------")
         
-        k += 3;
+        k += 2
         
     print("End of world", h, "tests.")
     print("==========================")
