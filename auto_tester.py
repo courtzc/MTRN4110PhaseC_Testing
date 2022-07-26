@@ -13,14 +13,17 @@ from project_function_code import project_function
 ### CHANGE THESE INPUTS ###
 
 # what is the path to your tests folder?
-path = 'C:\\Users\\Court\\OneDrive\\Documents\\AAUNSW\\2022 T2\\MTRN4110\\MTRN4110PhaseC\\tests'
+path = 'C:\\Users\\leap.staff\\Desktop\\Other\\Term 2 2022\\4110_ROBOTIC_DESIGN\\z1234567_MTRN4110_PhaseC\\tests'
 
 # how many worlds are you testing?
-x = 1
+x = 2
 
 # -----------------------------------------------------------------------------
 
-
+# Summary code
+total_tests = 0
+passed = 0
+failed = 0
 
 
 ### CODE ###
@@ -69,6 +72,8 @@ for j in range(1,t):
         # if identical, yay!
         if (map_generated == map_ex):
             print("success! in set ", set_letter)
+            total_tests += 1
+            passed += 1
             
         # if not identical, sad.
         else:
@@ -77,6 +82,8 @@ for j in range(1,t):
             print(map_generated)
             print("but the expected output was: ")
             print(map_ex)
+            total_tests += 1
+            failed += 1
         
         print("End of set", set_letter, "tests.")
         print("---------------------")
@@ -85,3 +92,11 @@ for j in range(1,t):
         
     print("End of world", h, "tests.")
     print("==========================")
+
+
+print("\n\n================SUMMMARY=================")
+#print("Conducted " + str(total_tests) + " total tests")
+print("Passed: " + str(passed) + " / " + str(total_tests))
+#print("Failed: " + str(failed) + " / " + str(total_tests))
+print("================SUMMMARY=================")
+
