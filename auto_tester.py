@@ -16,7 +16,7 @@ from project_function_code import project_function
 path = "D:\\OneDrive\\Documents\\AAUNSW\\2022 T2\\MTRN4110\\MTRN4110PhaseC\\tests"
 
 # how many worlds are you testing?
-x = 5
+x = 6
 
 # -----------------------------------------------------------------------------
 
@@ -67,18 +67,36 @@ for j in range(1,t):
         
         # feed them into the project as inputs
         map_generated = project_function(bug_photo, maze_photo, robot_photo)
-        
+        text_file_temp = [set_letter, 'failed_test_comparison.txt']
+        text_file_name = ''.join(text_file_temp)
+
+
         # compare output to the output text file
         # if identical, yay!
         if (map_generated == map_ex):
+
             print("success! in set ", set_letter)
             total_tests += 1
             passed += 1
+
+            # we can delete this failure.txt
+            if os.path.exists(text_file_name):
+                os.remove(text_file_name)
             
         # if not identical, sad.
         else:
             print("failure in set ", set_letter)
             print("you generated: ")
+
+            # export the failure to a txt for clearer comparison
+            with open(text_file_name, 'w') as f:
+                
+                f.write('Map generated:\n')
+                f.write(map_generated)
+                f.write('\n\n')
+                f.write('Map expected: \n')
+                f.write(map_ex)
+
             print(map_generated)
             print("but the expected output was: ")
             print(map_ex)
@@ -94,9 +112,9 @@ for j in range(1,t):
     print("==========================")
 
 
-print("\n\n================SUMMMARY=================")
+print("\n\n================SUMMARY=================")
 #print("Conducted " + str(total_tests) + " total tests")
 print("Passed: " + str(passed) + " / " + str(total_tests))
 #print("Failed: " + str(failed) + " / " + str(total_tests))
-print("================SUMMMARY=================")
+print("================SUMMARY=================")
 
