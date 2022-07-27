@@ -1,6 +1,4 @@
-from ntpath import join
 import os
-import numpy as np
 import os.path
 from project_function_code import project_function
 
@@ -33,8 +31,8 @@ t = x + 1
 for j in range(1,t):
 
     h = str(j).zfill(3)
-    print("=================================")
-    print("Beginning tests for world", h, ".")
+    print("\n=======================================")
+    print("\nWorld", h, ":")
     
     files = [i for i in os.listdir(path) if os.path.isfile(os.path.join(path,i)) and i.startswith(h)]
 
@@ -62,9 +60,7 @@ for j in range(1,t):
         robot_photo = ''.join(robotfile)
         
         set_letter = maze_photo[6:12]
-        print("-----------------------")
-        print("Beginning test set", set_letter)
-        
+
         # feed them into the project as inputs
         map_generated = project_function(bug_photo, maze_photo, robot_photo)
         text_file_temp = [set_letter, 'failed_test_comparison.txt']
@@ -74,8 +70,7 @@ for j in range(1,t):
         # compare output to the output text file
         # if identical, yay!
         if (map_generated == map_ex):
-
-            print("success! in set ", set_letter)
+            print('\n', set_letter, ": success!")
             total_tests += 1
             passed += 1
 
@@ -85,8 +80,8 @@ for j in range(1,t):
             
         # if not identical, sad.
         else:
-            print("failure in set ", set_letter)
-            print("you generated: ")
+            print('\n', set_letter, ": failure.")
+            print("\nyou generated: ")
 
             # export the failure to a txt for clearer comparison
             with open(text_file_name, 'w') as f:
@@ -98,18 +93,13 @@ for j in range(1,t):
                 f.write(map_ex)
 
             print(map_generated)
-            print("but the expected output was: ")
+            print("\nbut the expected output was: ")
             print(map_ex)
             total_tests += 1
             failed += 1
         
-        print("End of set", set_letter, "tests.")
-        print("---------------------")
         
         k += 2
-        
-    print("End of world", h, "tests.")
-    print("==========================")
 
 
 print("\n\n================SUMMARY=================")
