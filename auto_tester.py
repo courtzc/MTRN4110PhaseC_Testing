@@ -16,7 +16,7 @@ from project_function_code import project_function
 path = "D:\\OneDrive\\Documents\\AAUNSW\\2022 T2\\MTRN4110\\MTRN4110PhaseC\\tests"
 
 # how many worlds are you testing?
-x = 2
+x = 5
 
 # -----------------------------------------------------------------------------
 
@@ -61,7 +61,7 @@ for j in range(1,t):
         maze_photo = ''.join(mazefile)
         robot_photo = ''.join(robotfile)
         
-        set_letter = maze_photo[9:12]
+        set_letter = maze_photo[6:12]
         print("-----------------------")
         print("Beginning test set", set_letter)
         
