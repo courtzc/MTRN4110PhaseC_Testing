@@ -5,6 +5,10 @@ Testing and test photos for MTRN4110 Phase C
 # Using the autotester
 ## Adding the contents of this test repo to your project
 
+#### Either
+Download this repo as a .zip folder and add it to your project's root directory
+
+#### Or - to stay up to date
 To update your current project git repo with these latest files, add this repo as an upstream friend. In your terminal in your project's root directory, run:
 
 `git remote add upstream https://github.com/courtzc/MTRN4110PhaseC_Testing.git`
