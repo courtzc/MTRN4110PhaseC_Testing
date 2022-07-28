@@ -2,7 +2,7 @@
 Testing and test photos for MTRN4110 Phase C
 
 
-# Using the autotester
+# Downloading the autotester
 ## Adding the contents of this test repo to your project
 
 #### Either
