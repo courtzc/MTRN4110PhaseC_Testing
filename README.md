@@ -47,6 +47,16 @@ def my_project(maze_pic, bug_pic, robot_pic):
   return <output text in the form of 37x11 array of chars>
 ```
 
+The project_function_code.py function should return a str which is the maze. I did it like this (for each row that I was writing to a .txt)
+
+```
+actual_output = ""
+# for each row (obvs str('') content will vary)
+  actual_output += str(' --- --- --- --- --- --- --- --- --- \n')
+return actual_output
+```
+
+
 Change your paths for the three pictures to be the three input variables, i.e.:
 
 ```
@@ -64,19 +74,7 @@ Go to your anaconda prompt and navigate to the root directory of **your project 
 
 Done!
 
-## Keeping it valid
-The project_function_code.py function should return a str which is the maze. I did it like this (for each row that I put together)
-
-```
-actual_output = ""
-# for each row (obvs str('') content will vary)
-  actual_output += str(' --- --- --- --- --- --- --- --- --- \n')
-return actual_output
-```
-
 ## Recommendations
-Comment out most of your print statements if you're doing lots of tests at once, it gets messy
-
 Comment out your `plt.show()` statements if you're doing lots - they pause the execution until you close them
 
 # Contributing to the test repo (i.e. uploading worlds and photosets)
@@ -109,7 +107,7 @@ Put these bad boys in the tests/ directory.
 
 world(001-999).txt
 
-i.e. for world one, it would be
+i.e. for world one expected output, it would be
 
 `001.txt`
 
@@ -119,14 +117,7 @@ i.e. for world one, it would be
 
 These also go in the tests/ directory.
 
-Each set of photos of the world (bug, maze, robot) have this syntax:
-
-#### bug:
-world(001-999)_photoset(a-z)_bug
-
-i.e. for world one, 2nd photoset, it would be
-
-`001_b_bug.png`
+Each set of photos of the world (maze & robot) have this syntax:
 
 #### maze:
 maze(001-999)_photo(a-z)_maze_inversion('inv' or 'nor')_robotpos(rowcolumn)_robotheading(N S E or W)_realtargetpos(rowcolumn)_faketargetpos(rowcolumn)
