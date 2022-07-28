@@ -65,12 +65,10 @@ Change your paths for the three pictures to be the three input variables, i.e.:
   IMAGE_LADYBUG_FILE_NAME = bug_pic
 ```
 
-*note: we maybe should return the image as well? that way it can show it if the output isn't correct.*
-
 ### Go to anaconda prompt
 Go to your anaconda prompt and navigate to the root directory of **your project git repo**. Then type:
 
-`python autotester.py`
+`python auto_tester.py`
 
 Done!
 
